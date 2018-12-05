@@ -15,10 +15,11 @@ T partition(T arr[], int left, int right)
     for(int j = left; j <= right - 1; j++)
     {
         if(arr[j] <= pivot)
-        //if element is smaller or equal to pivot increment index and  
+        //if element is smaller or equal to pivot  
         {
             index++;
             swap(arr[index],arr[j]);
+            //swaps places of current element(j) to index (the elements smaller than pivot)
         }
     }
 
